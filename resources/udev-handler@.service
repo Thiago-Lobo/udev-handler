@@ -1,0 +1,7 @@
+[Unit]
+Description=Mount USB Drive on %i
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/wrapper2 %i
+ExecStop=/wrapper2 %i

@@ -1,0 +1,2 @@
+KERNEL=="sd[a-z][0-9]", ATTRS{serial}=="575848314342314636303734", SUBSYSTEMS=="usb", ACTION=="add", RUN+="/bin/systemctl start udev-handler@%k.service"
+KERNEL=="sd[a-z][0-9]", ATTRS{serial}=="575848314342314636303734", SUBSYSTEMS=="usb", ACTION=="remove", RUN+="/bin/systemctl stop udev-handler@%k.service"

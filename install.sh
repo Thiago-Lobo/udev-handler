@@ -9,12 +9,12 @@ log_message()
 	echo "$millis $1" >> $LOG_PATH/$LOG_FILE
 }
 
-sudo mkdir /var/log/udev-handler
+mkdir /var/log/udev-handler
 
 # Install exFAT support packages
-sudo apt install -y exfat-fuse
+apt install -y exfat-fuse
 
 # Install NTFS support packages
-sudo apt install -y ntfs-3g
+apt install -y ntfs-3g
 
 
